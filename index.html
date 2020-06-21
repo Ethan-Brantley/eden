@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media=all>
+    </head>
+    <body>
+        <a href="javascript:void(0);" id="menuIcon" onclick="mobileNavigation()">
+            <div class="menuBars"></div>
+            <div class="menuBars"></div>
+            <div class="menuBars"></div>
+        </a>
+
+        <img src="images/logo.png" id="icon">
+
+        <div id="mobileSidebar">
+             <ul id="mobileNav">
+                <li class="navItem"><a href="index.html">Home</a></li>
+                <li class="navItem"><a href="#">About Us</a></li>
+                <li class="navItem"><a href="#">Services</a></li>
+                <li class="navItem"><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+
+        <ul class="nav">
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="#">About Us</a></li>
+            <li class="navItem"><a href="#">Services</a></li>
+            <li class="navItem"><a href="#">Gallery</a></li>
+        </ul>
+
+        <main id="main">
+
+            <h1>Sustainability. Beauty. Elegance.</h1>
+            <h2>Welcome to Eden.</h2>
+
+
+            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <p class="quote-footer">-Signmaker</p>
+            
+            <script>
+                function mobileNavigation() {
+                    var navList = document.getElementById("mobileSidebar");
+                    var main = document.getElementById("main");
+                    var icon = document.getElementById("menuIcon");
+
+                    if(navList.style.width === "0px")
+                    {
+                        navList.style.display = "block";
+                        navList.style.width = "10em";
+                        main.style.marginLeft = "10em";
+                        icon.style.left = "11em";
+                    }
+                    else
+                    {
+                        navList.style.width = "0px";
+                        main.style.marginLeft = "0px";
+                        icon.style.left = "0px";
+                        navList.style.display = "none";
+                    }
+
+                }
+            </script>
+
+        </main>
+    </body>
+</html>

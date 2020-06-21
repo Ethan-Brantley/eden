@@ -1,0 +1,221 @@
+html {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #5c5c5c;
+    width: 100%;
+
+}
+
+#main {
+
+    transition: margin-left .5s;
+    padding-top: 5em;
+
+}
+
+p {
+
+    line-height: 25px;
+    display: block;
+    text-indent: 50px;
+    padding: 3em;
+    
+}
+
+.quote {
+
+    line-height: 25px;
+    width: 75%;
+    display: block;
+    text-indent: 50px;
+    font-size: 1em;
+    padding: 3em 0 0 3em;
+
+}
+
+.quote-footer {
+
+    line-height: 10px;
+    display: block;
+    text-indent: 50px;
+    padding: 1em 0px 0px 0px;
+    font-size: 1em;
+    color: #808080;
+
+}
+
+h1 {
+
+    font-size: 2em;
+    padding: 50px 0px 20px 50px;
+
+}
+
+h2 {
+
+    font-size: 1.4em;
+    padding: 0px 0px 20px 50px;
+
+}
+
+#icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5em;
+}
+
+.menuBars {
+
+    background-color: #000000;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+#menuIcon {
+
+    display: block;
+    position: absolute;
+    top: 1em;
+    width: 2em;
+    margin: 10px;
+
+}
+
+.nav {
+
+    display: none;
+
+}
+
+#mobileSidebar {
+
+    width: 0;
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+
+}
+
+#mobileNav a {
+
+    text-decoration: none;
+    display: block;
+    padding: 3em 1em 0em 3em;
+    color: #fff;
+
+}
+
+
+/*
+#nav {
+
+    display: none;
+    width: 100%;
+    padding: 4em;
+
+}
+
+.navItem a {
+
+    display: block;
+    padding: 2px;
+    width: 5em;
+    margin: 1em;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+
+}
+
+.navItem a::after {
+
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease all 0.0s;
+
+}
+
+.navItem a:hover::after {
+
+    width: 100%;
+    transition: 0.3s ease all;
+
+} */
+
+@media only screen and (min-width: 700px) {
+
+    #main {
+
+        padding-top: 100px;
+
+    }
+
+    #icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 6em;
+        padding: 1em;
+    }
+
+    .nav {
+
+        display: block;
+        width: 100%;
+        padding: 3.5em;
+    
+    }
+    
+    .navItem {
+    
+        display: inline;
+        padding: 0 7em 0 7em;
+    
+    }
+
+    .navItem a {
+
+        text-decoration: none;
+        color: #5c5c5c;
+        position: relative;
+
+    }
+
+    /*
+    .navItem a::after {
+
+        content: "";
+        position: absolute;
+        background-color: #000;
+        height: 1px;
+        width: 0%;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s ease all 0.0s;
+
+    }
+
+    .navItem a:hover::after {
+
+        width: 100%;
+        transition: 0.3s ease all;
+    
+    }*/
+
+    .menuBars {
+
+        display: none;
+
+    }
+}
